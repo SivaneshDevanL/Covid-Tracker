@@ -1,0 +1,62 @@
+body{
+background:#EFEFEF;
+}
+#main{margin-left: 20px;}
+
+#select{
+    margin-left: 45%;
+    padding:1%;
+    width:10%; 
+    background-color: #EFEFEF;
+    border-color:silver;
+    border-radius: 3px;
+    font-size: medium;
+}
+#flex{
+    display: flex;
+    align-items: baseline;
+}
+#detail{
+    background-color: white;
+    width:26%;
+    margin-left: 2%;
+}
+.detail{
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+#heading{
+    display: flex;
+    justify-content: center;
+}
+.detail1{
+    background-color: #EFEFEF;
+}
+.p{
+    margin-left: 3%;
+}
+.h5{
+    margin-right: 3%;
+}
+#cases{
+    margin-top: -45%;
+    display: flex;
+}
+.cases{
+    margin-right: 1%;
+    width:22.7%;
+    background-color: white;
+    border-radius: 7px;
+}
+.h3{
+    display: flex;
+    justify-content: center;
+}
+.infected{
+    color: red;
+}
+.recovered{
+    color:green;
+}
