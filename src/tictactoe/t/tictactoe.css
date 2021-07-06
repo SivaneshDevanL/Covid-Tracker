@@ -1,0 +1,41 @@
+#turn{
+    display:flex;
+    justify-content:center;
+    margin-top: 10%;
+    font-size: 40px;
+    color: teal;
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    background-color:darkkhaki;
+}
+#table{
+    display:flex;
+    justify-content:center;
+    margin-top: 60px;
+}
+.summa{
+    font-size:80px;
+    display: flex;
+    justify-content: center;
+    margin-top:-10px;
+}
+#result{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 40%;
+    font-size: 50px;
+    color:yellowgreen;
+    background-color:lightblue;
+    width: 20%;
+}
+#button{
+    display:none;
+    margin-left: 45%;
+    width: 100px;
+    height: 50px;
+    font-size:180%;
+    margin-top: 10px;
+}

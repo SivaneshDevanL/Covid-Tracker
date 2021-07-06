@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './covidtracker/covid';
+// import App from './google/google';
+// import App from './notesApp/notes';
+import App from './covidtracker/covid'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

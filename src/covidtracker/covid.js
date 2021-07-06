@@ -3,11 +3,14 @@ import './covid.css'
 
 export default function App() {
     const [state, setState] = useState()
-    const [index, setIndex] = useState(0)
+    const [index, setIndex] = useState(93)
     useEffect(() => {
         fetch('https://corona.lmao.ninja/v2/countries?yesterday&sort')
             .then(x => x.json())
             .then(setState)
+        // fetch("https://corona.lmao.ninja/v2/countries?yesterday&sort",{
+        //     headers:{"content-type":"application/json"},
+        //     method:"post",body:JSON.stringify({})})
     }, [])
     function countryindex(e) {
         for (let i = 0; i < e.target.length; i++) {
@@ -21,7 +24,8 @@ export default function App() {
                 <h1>Covid Tracker</h1>
                 <select id="select" onChange={countryindex}>
                     {state && state.map((item, i) => (
-                        <option  >{item.country}</option>
+                        (item.country==="India"&&<option selected>{item.country}</option>)||
+                        <option>{item.country}</option>
                     ))
                     }</select>
                 <div id="detail">
@@ -69,7 +73,7 @@ export default function App() {
                 <p className='h3'>Deaths</p>
                 <h3 className='h3'>+{state ? state[index].deaths : ''}</h3></div>
                 </div>
-            <p><iframe title='map' src="https://app.developer.here.com/coronavirus/" style={{width:'70%',height:'500px'}}></iframe></p>
+            <p><iframe title='map' src="https://ourworldindata.org/grapher/covid-vaccination-doses-per-capita?tab=map&time=latest&country=~YEM"  style={{width:'70%',height:'500px'}}></iframe></p>
         </div>
     )
 }

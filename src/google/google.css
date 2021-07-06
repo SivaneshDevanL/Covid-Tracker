@@ -1,0 +1,21 @@
+#main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
+}
+#input{
+    margin-top: -21px;
+    width:50%;
+    padding: 1%;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+}
+#font{
+    display: flex;
+    font-size:90px;
+    font-weight:500;
+}
